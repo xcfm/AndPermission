@@ -18,8 +18,7 @@ android {
 }
 
 dependencies {
-    compile rootProject.ext.dependencies.permission
-
     compile rootProject.ext.dependencies.appCompat
     compile rootProject.ext.dependencies.design
+    compile project(':permission')
 }

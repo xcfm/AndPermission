@@ -49,6 +49,8 @@ public interface Request<T extends Request> {
      */
     T callback(Object callback);
 
+    T callback(PermissionListener callback);
+
     /**
      * Request permission.
      *

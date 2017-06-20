@@ -46,7 +46,7 @@ class DefaultRequest implements
 
     private Target target;
 
-    private int mRequestCode;
+    private int mRequestCode = 101;
     private String[] mPermissions;
     private Object mCallback;
     private RationaleListener mRationaleListener;
@@ -78,6 +78,13 @@ class DefaultRequest implements
         this.mCallback = callback;
         return this;
     }
+
+    @Override
+    public RationaleRequest callback(PermissionListener callback) {
+        this.mCallback = callback;
+        return this;
+    }
+
 
     @NonNull
     @Override
